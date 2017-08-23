@@ -1,5 +1,5 @@
 /*-----------------------
-	General Styles start
+  General Styles start
 -------------------------*/
 /*----Source Sans Pro font-family start----*/
 
@@ -11,8 +11,8 @@
        url('../fonts/SourceSansProLight.woff') format('woff'), /* Pretty Modern Browsers */
        url('../fonts/SourceSansProLight.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/SourceSansProLight.svg#Source Sans Pro') format('svg'); /* Legacy iOS */
-	font-style: normal;
-	font-weight: 300;  
+  font-style: normal;
+  font-weight: 300;  
 }
 @font-face {
   font-family: 'Source Sans Pro';
@@ -22,8 +22,8 @@
        url('../fonts/SourceSansProLightItalic.woff') format('woff'), /* Pretty Modern Browsers */
        url('../fonts/SourceSansProLightItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/SourceSansProLightItalic.svg#Source Sans Pro') format('svg'); /* Legacy iOS */
-	font-style: italic;
-	font-weight: 300;  
+  font-style: italic;
+  font-weight: 300;  
 }
 @font-face {
   font-family: 'Source Sans Pro';
@@ -33,8 +33,8 @@
        url('../fonts/SourceSansProRegular.woff') format('woff'), /* Pretty Modern Browsers */
        url('../fonts/SourceSansProRegular.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/SourceSansProRegular.svg#Source Sans Pro') format('svg'); /* Legacy iOS */
-	font-style: normal;
-	font-weight: 400;  
+  font-style: normal;
+  font-weight: 400;  
 }
 @font-face {
   font-family: 'Source Sans Pro';
@@ -44,8 +44,8 @@
        url('../fonts/SourceSansProItalic.woff') format('woff'), /* Pretty Modern Browsers */
        url('../fonts/SourceSansProItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/SourceSansProItalic.svg#Source Sans Pro') format('svg'); /* Legacy iOS */
-	font-style: italic;
-	font-weight: 400;  
+  font-style: italic;
+  font-weight: 400;  
 }
 @font-face {
   font-family: 'Source Sans Pro';
@@ -55,8 +55,8 @@
        url('../fonts/SourceSansProSemiBold.woff') format('woff'), /* Pretty Modern Browsers */
        url('../fonts/SourceSansProSemiBold.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/SourceSansProSemiBold.svg#Source Sans Pro') format('svg'); /* Legacy iOS */
-	font-style: normal;
-	font-weight: 600;  
+  font-style: normal;
+  font-weight: 600;  
 }
 @font-face {
   font-family: 'Source Sans Pro';
@@ -66,8 +66,8 @@
        url('../fonts/SourceSansProBold.woff') format('woff'), /* Pretty Modern Browsers */
        url('../fonts/SourceSansProBold.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/SourceSansProBold.svg#Source Sans Pro') format('svg'); /* Legacy iOS */
-	font-style: normal;
-	font-weight: 700;  
+  font-style: normal;
+  font-weight: 700;  
 }
 @font-face {
   font-family: 'Source Sans Pro';
@@ -77,8 +77,8 @@
        url('../fonts/SourceSansProBlack.woff') format('woff'), /* Pretty Modern Browsers */
        url('../fonts/SourceSansProBlack.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/SourceSansProBlack.svg#Source Sans Pro') format('svg'); /* Legacy iOS */
-	font-style: normal;
-	font-weight: 900;  
+  font-style: normal;
+  font-weight: 900;  
 }
 /*----Source Sans Pro font-family end----*/
 
@@ -132,46 +132,51 @@ font-weight: 400;
 /*----Merriweather Pro font-family end----*/
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
 }
 body {
-	font-family: 'Source Sans Pro', Arial, sans-serif;
-	color: #212931;
-  line-height: 32px;	
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  color: #212931;
+  line-height: 32px;  
 }
 .page-wrapper {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	background: url("../images/bg.jpg") no-repeat top center fixed;
-	background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: url("../images/bg.jpg") no-repeat top center fixed;
+  background-size: cover;
 }
 header, section, footer, aside, nav, main, article, figure {
-		display: block; 
+    display: block; 
 }
 .page-width {
-	width: 1152px;
-	margin: 0 auto;
+  width: 1152px;
+  margin: 0 auto;
 }
 ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 .effect {  
+  -webkit-transition: color 0.2s;  
+  -o-transition: color 0.2s;  
   transition: color 0.2s;
 }
 .effect:hover {
   color: #18bfef;
 }
 .brd-effect {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 .brd-effect:hover {
@@ -179,7 +184,9 @@ a {
   border-color: #18bfef;
 }
 .image-effect:hover a {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .sec-title {
   width: 542px;
@@ -213,11 +220,15 @@ a {
   width: 100%;
   height: 100%;
   background-size: cover;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   display: block;
 }
 a.image-pos:hover  {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 .btn {
   display: inline-block;
@@ -231,11 +242,15 @@ a.image-pos:hover  {
   cursor: pointer;
 }
 .btn-effect {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .btn-fill {
   background-color: #212931;
   color: #fff;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;  
 }
 .btn-fill:hover {
@@ -247,12 +262,16 @@ a.image-pos:hover  {
 }
 .brd-bottom {
   border-bottom: 1px dotted #717981;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 .brd-bottom:hover {
   border-bottom-color: transparent;
 }
 .btn-effect2 {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 .btn-effect2:hover {
@@ -266,7 +285,7 @@ a.image-pos:hover  {
   overflow: hidden;
 }
 /*---------------------
-	General Styles end
+  General Styles end
 -----------------------*/
 
 /*---------------------
@@ -287,18 +306,18 @@ a.image-pos:hover  {
   margin-right: 6px;  
 }
 /*---------------------
-	Navigation icon end
+  Navigation icon end
 -----------------------*/
 
 /*-------------
   Header start
 ---------------*/
 header {
-	background-color: transparent;
-	height: 582px;
-	padding-top: 143px;
-	text-align: center;
-	color: #fff;
+  background-color: transparent;
+  height: 582px;
+  padding-top: 143px;
+  text-align: center;
+  color: #fff;
 }
 .page-title {
   font-size: 83px;
@@ -310,57 +329,61 @@ header {
   letter-spacing: 3px;
 }
 .page-intro {
-	font-family: 'Merriweather', "Times New Roman", serif;
-	width: 790px;
-	font-size: 19px;
-	margin: 0 auto 48px;
-	line-height: 34px;
+  font-family: 'Merriweather', "Times New Roman", serif;
+  width: 790px;
+  font-size: 19px;
+  margin: 0 auto 48px;
+  line-height: 34px;
   font-style: italic;
   font-weight: 400;
 }
 .page-intro a {
-	color: #fff;
-	border-bottom: 1px dotted #fff;
-	transition: all 0.5s;
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .page-intro a:hover {
-	color: #18bfef;
-	border-bottom: none;
+  color: #18bfef;
+  border-bottom: none;
 }
 .scr-down-btn {
-	display: block;
-	width: 60px;
-	height: 60px;
-	line-height: 60px;
-	border: 2px solid #fff;
-	border-radius: 50%;
-	text-align: center;
-	margin: 0 auto;
-	font-size: 20px;
-	color: #fff;
-	transition: all 0.4s;
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #fff;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 .scr-down-btn:hover {
-	color: #18bfef;
-	border-color: #18bfef;
+  color: #18bfef;
+  border-color: #18bfef;
 }
 
 /*-------------
-	Header end
+  Header end
 ---------------*/
 
 /*------------------
-	Navigation start
+  Navigation start
 --------------------*/
 .navigation-inner {
-	height: 64px;
-	background: rgba(0,0,0, 0.2);
+  height: 64px;
+  background: rgba(0,0,0, 0.2);
 }
 nav {
-	float: left;
+  float: left;
 }
 nav ul li {
-	float: left;
+  float: left;
 }
 nav ul li a {
   font-size: 14px;
@@ -368,26 +391,28 @@ nav ul li a {
   color: #fff;
   display: inline-block;
   padding: 16px 20px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
   transition: all 0.4s;
 }
 nav ul li a:hover {
-	background: rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.2);
 }
 .social {
-	float: right;
-	margin-top: -17px;
-	margin-right: 25px;
+  float: right;
+  margin-top: -17px;
+  margin-right: 25px;
 }
 .social a {
-	font-size: 21px;
-	color: #fff;
-	margin: 0 17px;	
+  font-size: 21px;
+  color: #fff;
+  margin: 0 17px; 
 }
 .social a:hover {
-	color: #18bfef;
+  color: #18bfef;
 }
 /*----------------
-	Navigation end
+  Navigation end
 ------------------*/
 /*-------------------------------
   Navigation pages start
@@ -516,6 +541,8 @@ nav ul li a:hover {
   font-weight: 700;
   padding: 4px 17px;
   border: 2px solid #eee;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   position: relative;
   margin-left: -2px;
@@ -835,6 +862,8 @@ nav ul li a:hover {
 }
 .form-effect {
   border: 2px solid #eee;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 .form-effect:focus {
@@ -1103,6 +1132,8 @@ input[type="checkbox"]:focus + label:before, input[type="radio"]:focus + label:b
   opacity: 0.4;
   font-size: 14px;
   font-weight: 700;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;  
 }
 .copyright ul li a:hover {
