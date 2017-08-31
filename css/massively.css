@@ -152,7 +152,7 @@ body {
   background-size: 100%;
 }
 header, section, footer, aside, nav, main, article, figure {
-    display: block; 
+  display: block; 
 }
 .page-width {
   width: 1152px;
