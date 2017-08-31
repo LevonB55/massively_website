@@ -149,7 +149,7 @@ body {
   height: 100%;
   margin: 0;
   background: url("../images/bg.jpg") no-repeat top center fixed;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 header, section, footer, aside, nav, main, article, figure {
   display: block; 
